@@ -1,29 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>G32</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Una pagina se divide en tres partes -->
     <!-- En el header se especifica el titulo y la barra de navegación -->
     <header>
-        <h1 style="text-align: center;">Bienbenido Grupo 32 esto es una intro a javascript</h1>
+      <h1 style="text-align: center">
+        Bienbenido Grupo 32 esto es una intro a javascript
+      </h1>
     </header>
 
     <!-- En el main escribimos los elementos principales de nuestra pagina -->
     <main>
-        <!-- Inicio de ejercicio para cambiar contenido de una etiqueta -->
-        <h2>Cambiando el contenido de una etiqueta HTML</h2>
-        <p id="demo">
-            Texto Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, mollitia facilis magnam omnis eligendi doloribus, impedit ut cupiditate vero nulla tenetur accusamus cumque hic adipisci doloremque explicabo at eaque obcaecati!
-        </p>
-        <button onclick="document.getElementById('demo').innerHTML = 'Texto cambiado con JS' ">Cambiar Texto</button>
+      <!-- Inicio de ejercicio para cambiar contenido de una etiqueta -->
+      <h2>Cambiando el contenido de una etiqueta HTML</h2>
+      <p id="demo" style="text-align: center">
+        Texto Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi,
+        mollitia facilis magnam omnis eligendi doloribus, impedit ut cupiditate
+        vero nulla tenetur accusamus cumque hic adipisci doloremque explicabo at
+        eaque obcaecati!
+      </p>
+      <button
+        onclick="document.getElementById('demo').innerHTML = 'Texto cambiado con JS' "
+      >
+        Cambiar Texto
+      </button>
+      <button
+        onclick="document.getElementById('demo').innerHTML = 'Texto Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, mollitia facilis magnam omnis eligendi doloribus, impedit ut cupiditate vero nulla tenetur accusamus cumque hic adipisci doloremque explicabo at eaque obcaecati!'"
+      >
+        Devolver texto Original
+      </button>
+      <hr />
+
+      <h2>Cambiando un atributo de una etiqueta HTML</h2>
+      <button onclick="document.getElementById('OnOff').src = 'img/on.gif'">
+        Encender
+      </button>
+      <img src="./img/off.gif" alt= "off" id="OnOff" />
+      <button onclick="document.getElementById('OnOff').src = 'img/off.gif'">
+        Apagar
+      </button>
     </main>
+
+    <hr />
+
+    <!-- Inicio ejercicio para cambiar el style de una etique html -->
+    <h2>Cambiando el código css de una etiqueta HTML</h2>
+    <p id="estilo">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, fuga? Aliquid
+      quibusdam debitis at enim reprehenderit, placeat quidem maxime libero ab
+      repellat, labore, aspernatur nostrum. Velit natus corporis recusandae
+      neque!
+    </p>
+    <button onclick="document.getElementById('estilo').style.fontSize = '35px'">Cambiar Estilo</button>
+    <button onclick="document.getElementById('estilo').style.fontSize = ''">Estilo Original</button>
 
     <!-- En el footer escribimos en pie de pagina de la pagina web -->
     <footer></footer>
-</body>
+  </body>
 </html>
